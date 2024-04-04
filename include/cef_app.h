@@ -74,7 +74,7 @@ int CefExecuteProcess(const CefMainArgs& args,
 ///
 /*--cef(api_hash_check,optional_param=application,
         optional_param=windows_sandbox_info)--*/
-bool CefInitialize(const CefMainArgs& args,
+bool CefInitialize(const CefMainArgs& args, // TODO(GXL)
                    const CefSettings& settings,
                    CefRefPtr<CefApp> application,
                    void* windows_sandbox_info);
@@ -113,7 +113,7 @@ void CefDoMessageLoopWork();
 /// will block until a quit message is received by the system.
 ///
 /*--cef()--*/
-void CefRunMessageLoop();
+void CefRunMessageLoop(); // TODO(GXL) 开始执行cef中的消息循环
 
 ///
 /// Quit the CEF message loop that was started by calling CefRunMessageLoop().
@@ -121,7 +121,7 @@ void CefRunMessageLoop();
 /// if CefRunMessageLoop() was used.
 ///
 /*--cef()--*/
-void CefQuitMessageLoop();
+void CefQuitMessageLoop(); // 退出消息循环
 
 ///
 /// Set to true before calling Windows APIs like TrackPopupMenu that enter a

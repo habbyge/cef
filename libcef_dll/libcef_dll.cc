@@ -143,7 +143,7 @@ CEF_EXPORT void cef_quit_message_loop() {
   // AUTO-GENERATED CONTENT - DELETE THIS COMMENT BEFORE MODIFYING
 
   // Execute
-  CefQuitMessageLoop();
+  CefQuitMessageLoop(); // 退出cef消息循环
 }
 
 CEF_EXPORT void cef_set_osmodal_loop(int osModalLoop) {
